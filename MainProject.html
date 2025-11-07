@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="basicCSS.css">
+    
     <title>MainProjects</title>
 </head>
 <body>
      
-<header>
+<body>
+    
+  <header>
     <div class="container">
         <!-- data-* 속성은 HTML 요소에 대한 추가 정보를 저장할 수 있는 HTML의 사용자 정의 속성 세트입니다. 
         "data-"라는 접두사가 붙고 그 뒤에 선택한 사용자 지정 이름이 붙습니다 -->
@@ -19,15 +22,17 @@
         <nav>
             <ul>
                 <li>
-                    <button>
-                           홈 
-                </button></li>
-                <li>
-                  <button data-animation-scroll="true" data-target="#about" >나에대해</button>
+                  <button data-animation-scroll="true" data-target="#about" id='present'>홈</button>
                     
                   </li>
                 <li>
-                  <button data-animation-scroll="true" data-target="#Features">학술</button>
+                  <button data-animation-scroll="true" data-target="#Features" onclick="location.href='C:\Users\USER\OneDrive\바탕 화면\포트폴리오 사이트\MainProject.html'">
+                    나에대해</button>
+                    
+                  </li> 
+                <li>
+                  <button>학술</button>
+                    
                   </li>
                 <li>
                   <button data-animation-scroll="true" data-target="#contact">연락</button>
@@ -40,11 +45,113 @@
 
 
 </header>
-
-<main id="project">
-
-</main>
+  
+  <section class='books'>
+    <div class='container'>
+      <div class="title" id='books-title'>
+        <h3>과학</h3>
+        <h2>화학</h2>
+        
+      </div>
+      
+      
+      <div class="contents" id='books-contents'>
+        <div class="box">
+          <div class="box-title" >
+            <p>물리화학</p>
+          </div>
+          <div class="box-story">
+            <h3>THERMODYNAMICS
+ AND
+ CHEMISTRY</h3>
+            <p>Howard Devoe</p>
+           
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <p>유기화학</p>
+          </div>
+          <div class="box-story">
+            <h3>책제목</h3>
+            <p>13123</p>
+           
+          </div>
+        </div>
+<!--         <div class="box">
+          <div class="box-title">
+            <p>p유기화학</p>
+          </div>
+          <div class="box-story">
+            <h3>책제목</h3>
+            <p>13123</p>
+           
+          </div> -->
+        </div>
+        
+        
+      </div>
+      
+      
+    </div>
     
+    
+    
+  </section>
+  <section class='books'>
+    <div class='container'>
+      <div class="title" id='books-title'>
+        <h3>h3books</h3>
+        <h2>h2수학</h2>
+        
+      </div>
+      
+      
+      <div class="contents" id='books-contents'>
+        <div class="box">
+          <div class="box-title" >
+            <p>p유기화학</p>
+          </div>
+          <div class="box-story">
+            <h3>책제목</h3>
+            <p>13123</p>
+           
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <p>p유기화학</p>
+          </div>
+          <div class="box-story">
+            <h3>책제목</h3>
+            <p>13123</p>
+           
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <p>p유기화학</p>
+          </div>
+          <div class="box-story">
+            <h3>책제목</h3>
+            <p>13123</p>
+           
+          </div>
+        </div>
+        
+        
+      </div>
+      
+      
+    </div>
+    
+    
+    
+  </section>
+
+  
+  
 </body>
 
 </html>
+
