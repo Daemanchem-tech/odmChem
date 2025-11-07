@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+
+
+:root{
+  --red:#ed4848;
+  --whitegray:#f8f8f8;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+  
+}
+a,a:link,a:visited{
+  color:inherit;
+  text-decoration: none;
+  
+  
+}
+
+li{
+  list-style:none;
+  
+}
+
+
+header{
+/*   영역확인용 */
+/*   opacity:0.5;
+  background-color:black; */
+  
+  position :fixed;
+  color:white;
+  top:0;
+  
+  z-index:1;
+  width:100%;
+  padding:1rem;
+  height:5rem;
+  
+  
+}
+
+header .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+ 
+}
+
+header nav ul{
+  display:flex;
+  
+}
+header nav ul li{
+  padding:10px;
+}
+
+header button{
+/*   부모 색과 동일하게 */
+  background:transparent;
+  border:0;
+  
+  cursor: 0;
+  color:white;
+  
+  
+}
+
+
+header.active{
+  background-color:rgba(0,0,0);
+  animation: fadeIn 0.5s ease-in-out;
+  
+    
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    
+  }
+  
+}
+
+
+section{
+  font-family:"Poppins",sans-serif;
+  padding: 5rem 0;
+  
+}
+
+section:nth-child(2n){
+  background-color:#f8f8f8;
+  
+}
+
+
+
+/* 글씨크기폰트 */
+section #books-title h2{
+  font-size:2.25rem;
+}
+section #books-title h3{
+  font-size:1.5rem;
+  color:var(--red);
+}
+
+#books-contents .box .box-story h3{
+  font-size:1.15rem;
+}
+
+
+
+
+/* 영역지정 */
+
+
+#books-title h2{
+  position:relative;
+  margin-top:-5px;  
+}
+
+
+.books .container::after{
+  content:"";
+  display:block;
+  clear:both;
+  
+}
+
+.books .contents:after{
+  content:"";
+  display:block;
+  clear:both;
+  
+}
+
+.books .contents .box{
+/*   border:1px solid black; */
+  width:30%;
+  padding:2rem;
+  float:left;
+  justify-content:space-between;
+  margin-right:5%;
+  cursor:pointer;
+  height:20rem;
+  
+}
+
+.books .contents .box:last-child{
+  margin-right:0;
+}
+
+.books .contents .box .box-title {
+  padding:0;
+  margin:1rem 0;
+}
+
+.books .contents .box:hover{
+  color:lightcoral; 
+}
+
